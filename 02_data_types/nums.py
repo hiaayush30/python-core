@@ -11,6 +11,8 @@ math.floor(-2.8)
 math.trunc(-2.8)
 # -2 as trunc goes towards 0
 
+x = 1 + 2j  # complex numbers
+
 print(random.randint(10,100))
 print(random.choice([2,4,6,8,10]))
 
@@ -32,3 +34,14 @@ print(setone - {1,2,3,4}) # it will not shpw {} as that is a dictionary
 print(type({}))
 print(type(True))
 print(False is 0)
+
+print (10/3)
+print(10//3)
+print(10**3)
+
+
+# type conversion
+x = input("x: ");
+print(type(x))
+x = int(x);
+print(x+1)

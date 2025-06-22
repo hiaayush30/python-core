@@ -1,4 +1,8 @@
 str = "Hello World"
+message = """
+Hi there,
+how are you?
+"""
 print(str[0])
 print(str.split(" ")[0])
 #or
@@ -29,6 +33,8 @@ print(len(str))
 
 for letter in str:
     print(letter)
+
+full = f"{len(str)} is the length of str"
 
 str3 = "He said:\"the movie was amazing\""
 print(str3)

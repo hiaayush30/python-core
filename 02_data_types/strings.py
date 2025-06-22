@@ -1,5 +1,3 @@
-
-
 str = "Hello World"
 print(str[0])
 print(str.split(" ")[0])

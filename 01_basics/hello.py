@@ -1,6 +1,7 @@
 from chai_fn import chai
 
 print("Hello again")
+print("*" * 10)
 
 chai("python function") 
 

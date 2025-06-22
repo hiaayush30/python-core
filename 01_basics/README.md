@@ -20,3 +20,5 @@ In short: **Python is the language, CPython is its most common implementation.**
 
 ### PyPi
 - PyPI is an online repository of Python packages. It hosts thousands of libraries that can be installed using pip. 
+
+-- `Linter` => tool for checking syntactical errors

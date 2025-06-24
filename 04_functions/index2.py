@@ -20,5 +20,7 @@ print(multiply(2,4,5,6,7))
 
 def saveUser(**user):  # this user here is a dictionary
    print(user)
+   print(user["id"])
+   
    
 saveUser(id=1,name="Aayush",marks=100)

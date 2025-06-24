@@ -1,7 +1,7 @@
 # Object Types / Data Types
 ## the variables do not have any datatypes, the reference in the memory has a data type
 
--- primitive types are numbers, string and boolean
+-- primitive types are number, string and boolean
 
 - Number : 1234, 3.14, 3+4j, 0b101, Decimal(), Fraction()
 

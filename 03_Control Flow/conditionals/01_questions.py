@@ -12,3 +12,10 @@ elif age < 18:
 
 else:
     print("Adult")
+
+# ternery operator
+message = "Eligible" if age>=18 else "Not Eligible"
+print(message)
+
+if age  <= 18< 65:
+    print("Eligible")

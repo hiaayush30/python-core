@@ -15,5 +15,11 @@ items = [
 
 def sort_item(item):  # returns the item price
     return item[1]
-items.sort(key=sort_item)
+# items.sort(key=sort_item)
 print(items)
+
+# using lambda fn (anonymous fn) lambda parameters:expression
+items.sort(key=lambda item:item[1])
+print(items)
+
+

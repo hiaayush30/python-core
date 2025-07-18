@@ -11,6 +11,7 @@ list_values = [x*2 for x in range(5000)]
 print("list:",getsizeof(list_values),"bytes")
 
 # when you are using generator object, you will not be able to get the total number of values you are working with
+# len(values) X
 
 print(values)
 

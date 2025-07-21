@@ -60,3 +60,20 @@ match month:
         case _:
             print("No such month")
 
+def math_operations(a,b,operand):
+    match operand:
+        case "+":
+            print(a+b)
+        case "-":
+            print(a-b)
+        case "*":
+            print(a*b)
+        case "/":
+            print(a/b)
+        case _:
+            print("Not a valid operation")
+
+a = int(input("Enter first number:"))
+b = int(input("Enter second number:"))
+operand = input("Enter the operation i.e +,-,*,/:")
+math_operations(a,b,operand)

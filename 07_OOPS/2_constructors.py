@@ -7,6 +7,11 @@ class Point:
     def draw(self): 
         print("drawing on the coordinate",self.x,",",self.y)
 
+    @classmethod
+    def zero(cls):  # by convention cls is the name of 1st parameter in a class method which refers to the class itself 
+        return cls(0,0)
+         
+
 
 obj = Point(1,2)
 print(obj.x)
@@ -18,3 +23,7 @@ Point.yo = "property changed"
 new_obj = Point(10,20)
 print(Point.yo)
 print(new_obj.yo) 
+
+
+new_Point = Point.zero()
+print(new_Point.x)

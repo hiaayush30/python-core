@@ -15,9 +15,6 @@ for letter in sentence:
 #              maxValue=value
 #              max_letter_repeated=key
  
-pprint(char_frequency,width=1) # width decides the number of characters on each line
 
-#or
-
-max_letter_repeated=sorted(char_frequency.items(), key=lambda kv:kv[1], reverse=True)
+max_letter_repeated=sorted(char_frequency.items(), key=lambda kv:kv[1], reverse=True) 
 print(max_letter_repeated,"appeared the max number of times")

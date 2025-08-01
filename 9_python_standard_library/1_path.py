@@ -18,3 +18,14 @@ path.exists()
 path.is_file()
 path.is_dir()
 print(path.name)  # returns only the file name from the specified path
+print(path.stem )   #__init__
+print(path.suffix)  #.py
+print(path.parent)
+
+new_path = path.with_name("file.txt")  # creates a new file in the same directory
+print(new_path) 
+
+print(path.absolute()) 
+
+path2 = path.with_suffix(".txt")  # __init__.txt
+print(path2)

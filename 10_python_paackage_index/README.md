@@ -17,3 +17,7 @@ python3 -m venv env
 source env/bin/activate
 deactivate
 ```
+
+- pipenv is a tool that combines pip and virtual environments into a single tool chain
+- pipenv is equivalent to npm
+- it internally uses pip and virtual environments

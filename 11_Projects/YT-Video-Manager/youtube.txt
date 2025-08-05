@@ -1,1 +1,1 @@
-[{"name": "Lagaan", "duration": "300"}, {"name": "Deadpool", "duration": "120"}]
+[{"name": "Lagaan", "duration": "300"}]

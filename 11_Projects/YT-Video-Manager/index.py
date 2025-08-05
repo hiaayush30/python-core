@@ -13,12 +13,13 @@ def save_data_helper(videos):
            json.dump(videos,file)
 
 def list_all_videos(videos):
-    print("\t All Videos")
+    print("*"*70)
     if len(videos) == 0:
         return print("No videos found!")
     for index,video in enumerate(videos,start=1):
-        print(f"{index}. {video["name"]} ({video["duration"]} mins)")
-    print("\n \t \t***")
+        # takes a list returns  (enumerate object) indexing along with each object ex (1, {'name': 'Lagaan', 'duration': '300'})
+        print(f"{index}. {video["name"]} ({video["duration"]} mins)")  
+    print("*"*70)
 
 def add_video(videos):
     name = input("Enter video name: ")
@@ -29,10 +30,28 @@ def add_video(videos):
 
 def update_video(videos):
     list_all_videos(videos)
-    id = input("Enter video id: ")
+    id = int(input("Enter video no. to update: "))
+    if id > len(videos) or id < 1:
+        print("Invalid id")
+    else:
+       updated_name = input("Enter updated name: ")
+       updated_duration = input("Enter updated duration: ")
+    videos[id-1] = {
+        "name":updated_name,
+        "duration":updated_duration
+    }
+    save_data_helper(videos)
+    print("Video details updated!")
 
 def delete_video(videos):
-    pass
+    list_all_videos(videos)
+    id = int(input("Enter video no. to delete: "))
+    if id > len(videos) or id < 1:
+        print("Invalid id")
+    else:
+      del videos[id-1]
+    save_data_helper(videos)
+    print("Video deleted!")
 
 def main():
     videos = load_data()

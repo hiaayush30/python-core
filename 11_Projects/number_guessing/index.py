@@ -35,6 +35,6 @@ if top_of_range.isdigit():
                 print("The number is lower than that!")
             else:
                 print("The number is higher than that!")
-else:
+else: 
     print("Enter a valid number")
     exit()

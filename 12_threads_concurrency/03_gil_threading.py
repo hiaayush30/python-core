@@ -1,14 +1,18 @@
+# gil => global interpretor lock
 import threading
 import time
+
 
 def brew_chai():
     print(f"{threading.current_thread().name} started brewing...")
     count = 0
     for _ in range(100_000_000):
         count += 1
+        print(count)
     print(f"{threading.current_thread().name} finished brewing...")
 
-thread1 =threading.Thread(target=brew_chai, name="Barista-1")
+
+thread1 = threading.Thread(target=brew_chai, name="Barista-1")
 thread2 = threading.Thread(target=brew_chai, name="Barista-2")
 
 start = time.time()
